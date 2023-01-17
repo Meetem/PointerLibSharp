@@ -1,6 +1,6 @@
 # C# Pointer Library
 
-Allows you to take a pointer of any C# managed object (e.g class objects, arrays, etc)
+Allows you to take a pointer of any C# managed object (e.g class objects, arrays, etc) thorugh IL instructions (fully optimized by a compiler, no array hacks, marshaling, etc)
 
 There are two functions:
 ### `void* GetPointer(this object obj)`
