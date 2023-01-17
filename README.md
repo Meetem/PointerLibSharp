@@ -9,7 +9,7 @@ void* GetPointer(this object obj);
 ```
 
 ```cs
-//returns Unity's internal (m_cachedPtr) pointer of UnityEngine.Object
+//returns Unity's native object (m_cachedPtr) pointer of UnityEngine.Object
 void* GetInternalPointer(this object obj);
 ```
 
