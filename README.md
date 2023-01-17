@@ -3,11 +3,8 @@
 Allows you to take a pointer of any C# managed object (e.g class objects, arrays, etc) thorugh IL instructions (fully optimized by a compiler, no array hacks, marshaling, etc)
 
 There are two functions:
-### `void* GetPointer(this object obj)`
-returns a pointer to the native object.
-
-### `void* GetInternalPointer(this object obj)`
-returns Unity's internal (m_cachedPtr) pointer of UnityEngine.Object
+`void* GetPointer(this object obj)`: returns a pointer to the native object.
+`void* GetInternalPointer(this object obj)`: returns Unity's internal (m_cachedPtr) pointer of UnityEngine.Object
 
 <details>
 <summary>Source Code (IL)</summary>
