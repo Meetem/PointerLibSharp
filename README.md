@@ -66,6 +66,9 @@ int SetData(StringAccess *str, byte *dataInUnicode16, int maxBytesRead, int maxB
 
 // Sets new length to the string and returns previous
 int SetLength(this string str, int newLengthInChars);
+
+// Calculated the length of Unicode-16 null-terminated string, returns the number of symbols.
+int UnicodeNullTerminatedLength(ushort* dataUnicode16, int maxReadBytes);
 ```
 
 My blog post about pointers in C#:
