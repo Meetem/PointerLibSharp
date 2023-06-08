@@ -64,6 +64,9 @@ int SetData(this string str, byte *dataInUnicode16, int maxBytesRead, int maxByt
 // Returns number of BYTES written
 int SetData(StringAccess *str, byte *dataInUnicode16, int maxBytesRead, int maxBytesWrite, int newLengthInChars);
 
+// Copy string data and length to <str> from <from>. Doesn't read/write more than (maxStringCapacity * 2) bytes.
+void CopyFrom(this string str, string from, int maxStringCapacity);
+
 // Sets new length to the string and returns previous
 int SetLength(this string str, int newLengthInChars);
 
